@@ -98,7 +98,7 @@ function viewData(mode, type, battletag1, battletag2){
     }
     else {
       window[mode](battletag1).done(function(){
-        $("#"+type).append(toHTML(Store.user[type], null, battletag1, battletag2))
+        $("#"+type).append(toHTML(Store.otheruser[type], null, battletag1, battletag2))
       })
     }
   }

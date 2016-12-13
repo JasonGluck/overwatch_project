@@ -6,6 +6,7 @@ function userAdapter(battletag, bt1){
       let user = new User(battletag)
       user.addGameData(result.game_stats)
       user.addAverageData(result.average_stats)
+      // debugger
       battletag === bt1 ? Store.user = user : Store.otheruser = user
       endVideo()
     },
